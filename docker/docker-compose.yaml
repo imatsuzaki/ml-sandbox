@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ml:
+    build:
+      context: ../
+      dockerfile: docker/local.cpu.Dockerfile
+    image: ml-local-cpu
+    container_name: ml-local-cpu
+    tty: true
+    working_dir: '/'
